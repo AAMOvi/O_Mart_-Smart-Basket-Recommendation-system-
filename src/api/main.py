@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 app = FastAPI(title="Food Recommendation API")
-BASE_DIR = Path(__file__).resolve().parent[2]
+BASE_DIR = Path(__file__).resolve().parents[2]
 
 # Load artifacts
 rules_path = Path("rules.pkl")
